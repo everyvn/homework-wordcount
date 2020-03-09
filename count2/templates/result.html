@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>단어수 세기</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}?v=0.81" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="mainTitle">전체 글자 수</h1>
+      <h1 class="textCount">"{{textcount}}"</h1>
+      <h3 class="inputText">Input Text</h3>
+      <textarea>{{text}}</textarea>
+      <h2 class="subTitle">Word Count</h2>
+      <table class="dataTable">
+        <thead>
+          <tr>
+            <th scope="cols">글자</th>
+            <th scope="cols">사용 횟수</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for key, value in dic.items %}
+          <tr>
+            <th scope="row">{{key}}</th>
+            <td>{{value}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <a class="btn_agian" href="{% url 'home' %}" style="color:rebeccapurple"
+        >Try Again</a
+      >
+    </div>
+  </body>
+</html>

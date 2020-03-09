@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  padding: 1rem;
+  border: 1px solid #efefef;
+  width: 30rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+textarea {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+}
+.btn_submit {
+  width: 22.1rem;
+  padding: 1rem;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+}
+.mainTitle {
+  color: #2b2b2b;
+}
+.textCount {
+  color: royalblue;
+}
+.inputText {
+  margin-top: 1rem;
+}
+.subTitle {
+  margin-top: 1rem;
+}
+.dataTable {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+}
+.dataTable thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+.dataTable tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+.dataTable td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+.btn_agian {
+  text-decoration: none;
+  margin-top: 1rem;
+  width: 22.1rem;
+  padding: 1rem;
+  background-color: rebeccapurple;
+  color: white !important;
+  font-size: 1rem;
+  display: inline-block;
+}
